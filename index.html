@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <title>Document</title>
+</head>
+<style>
+#preloader{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    background-color: white;
+}
+.us{
+    color: #e33b28;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    text-align: center;
+}
+.pb{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 600;
+}
+.gs{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+#a{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    margin-left: 200px;
+}
+#na{
+    background-color: #e33b28;
+    overflow: hidden;
+}
+#ab{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    margin-left: 150px;
+}
+#ac{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    margin-left: 150px;
+}
+#ad{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    margin-left: 150px;
+}
+.card{
+    width: 270px;
+}
+.card-image{
+    height: 38vh;
+}
+#contact{
+    background-color: #e33b28;
+}
+.o{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+#i{
+    color: white;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+.sp{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+#spd{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+.spa{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    padding-top: 40px;
+}
+.ll{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+.li{
+    list-style: none;
+}
+.hero-container{
+    position: relative;
+    max-width: 100%;
+    margin: auto  0;
+    overflow: hidden;
+}
+.hero-image{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+.hero-text h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.hero-text p{
+font-size: 1.5rem;
+text-align: center;
+}
+.speed{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    padding-top: 40px;
+}
+#sb{
+    color: white;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 10px;
+}
+#sc{
+    color: white;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 10px; 
+}
+#sg{
+    color: white;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 10px;
+    text-decoration: none;
+}
+#sh{
+    color: white;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.sf{
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    padding-top: 40px;
+}
+.dd{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.lagg{
+    background-color: white;
+    color: #e33b28;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    text-align: end;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+</style>
+<body>
+     <div id="preloader"><img src="img/1488.gif" alt=""></div>
+    <!-- home about us nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div id="na" class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" id="a" aria-current="page" href="#">Home</a>
+        <a class="nav-link active" id="ab" href="#about">About Us</a>
+        <a class="nav-link active" id="ac" href="#contact">Contact Us</a>
+        <a class="nav-link active" id="ad" href="#sites">Our Sites</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="hero-container">
+        <img src="img/hero.avif" class="hero-image" alt="">
+        <div class="hero-text">
+            <h1>KBAB Geoscience Consult</h1>
+            <p>Exploring the worlds resources</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- about us -->
+    <div class="container">
+        <h2 id="about" class="us">About Us</h2>
+        <p class="pb">KBAB Geoscience Consult is a leading geological and geotechnical consulting firm dedicated to turning earth data into actionable insights. With over 18 years of experience across multiple countries, we specialize in mineral exploration, geological mapping, geotechnical investigations, and environmental geology.
+
+Our team combines field expertise with modern technology to deliver accurate, practical, and reliable solutions for a wide range of projects—from large-scale mineral exploration campaigns to urban infrastructure assessments. We pride ourselves on providing clear, data-driven recommendations that empower clients to make informed decisions efficiently and safely.
+
+At KBAB Geoscience Consult, we value integrity, innovation, and sustainability. Our mission is to support responsible development of natural resources while minimizing environmental impact and ensuring project success from field to office.</p>
+    </div>
+    <!-- specialties -->
+     <div>
+        <h2 class="gs" id="sites">Some of our geographical  sites</h2>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-image" src="img/site1.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus quam consequatur quo illum aliquam eum nihil, pariatur neque a mollitia molestias obcaecati laudantium suscipit libero veritatis, eos magnam dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-image" src="img/site2.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus quam consequatur quo illum aliquam eum nihil, pariatur neque a mollitia molestias obcaecati laudantium suscipit libero veritatis, eos magnam dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-image" src="img/site3.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus quam consequatur quo illum aliquam eum nihil, pariatur neque a mollitia molestias obcaecati laudantium suscipit libero veritatis, eos magnam dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-image" src="img/site4.webp" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus quam consequatur quo illum aliquam eum nihil, pariatur neque a mollitia molestias obcaecati laudantium suscipit libero veritatis, eos magnam dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+     <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2 class="o">CONTACTS US</h2>
+                    <i id="i" class="fi fi-sr-phone-flip"></i>
+                    <a class="sp" href="tel:+2348080141919">+234 808 014 1919</a>
+                    <li class="li"><a class="ll" href="https://www.google.com/maps/search/?api=1&query=Oladipo+Diya+Plot+17+Gudu+District+Abuja">Head Office: Oladipo Diya Plot 17, Street, Gudu District, Abuja</a></li>
+                    <li class="li"><a class="ll" href="https://www.google.com/maps/search/?api=1&query=Plot+1+Prince+Avenue+God's+Own+Estate+Karishi+Abuja">Plot 1, Prince Avenue, God’s Own Estate, Karishi, Abuja</a></li>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2 class="speed">Social Links</h2>
+                    <li id="sb">
+                        <a  id="sh" href="https://www.facebook.com/Kbabgeoscience/?utm_source=chatgpt.com"><i class="fi fi-brands-facebook"></i></a>
+                        <i class="fi fi-brands-twitter-alt"></i>
+                        <i class="fi fi-brands-tik-tok"></i>
+                        <a id="sg" href="https://www.instagram.com/kbabgeoscienceconsult/?utm_source=chatgpt.com"><i class="fi fi-brands-instagram"></i></a>
+                        <i id="sg" class="fi fi-brands-linkedin"></i>
+                    </li>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2 class="sf">QUICK LINKS</h2>
+                    <li class="dd"><a class="dd" href="">HOME</a></li>
+                    <li class="dd" ><a class="dd" href="#about">ABOUT US</a></li>
+                    <li class="dd"><a class="dd" href="#contact">CONTACT US</a></li>
+                    <li class="dd"><a class="dd" href="#sites">OUR SITES</a></li>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+                    <a class="lagg" href="">Sign Up</a>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+    <script>setTimeout(()=>document.getElementById("preloader").style.display ="none", 1000)</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
